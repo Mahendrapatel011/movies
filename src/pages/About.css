@@ -1,0 +1,76 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Center text */
+}
+
+.about-title {
+    font-size: 3em; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+    color: #333; /* Darker color for title */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.profile-card {
+    display: flex; /* Use flexbox for layout */
+    background: white; /* White background for profile section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    padding: 20px; /* Padding inside profile card */
+    max-width: 800px; /* Maximum width for better layout */
+    margin: 20px auto; /* Center the profile card */
+    align-items: center; /* Center content vertically */
+}
+
+.profile-photo {
+    border-radius: 50%; /* Circular image */
+    width: 150px; /* Fixed size for photo */
+    height: 150px; /* Fixed size for photo */
+    margin-right: 20px; /* Space between photo and text */
+}
+
+.profile-info {
+    text-align: left; /* Align text to the left */
+}
+
+.dob {
+    font-weight: bold; /* Highlight date of birth */
+}
+
+.thoughts {
+    font-style: italic; /* Italicize thoughts */
+    margin-top: 10px; /* Space above thoughts */
+    color: #666; /* Softer color for thoughts */
+    font-size: 1.2em; /* Size of thoughts */
+}
+
+.instagram-link {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center icon and text */
+    margin-top: 15px; /* Space above link */
+    text-decoration: none; /* Remove underline */
+    color: #e1306c; /* Instagram color */
+    font-size: 1.2em; /* Font size */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.instagram-link:hover {
+    color: #c13584; /* Darker color on hover */
+}
+
+.instagram-icon {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.5em; /* Icon size */
+}

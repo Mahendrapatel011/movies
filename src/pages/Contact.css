@@ -1,0 +1,83 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    padding: 20px; /* Padding around content */
+    text-align: center; /* Center text */
+}
+
+.contact-title {
+    font-size: 3em; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+    color: #333; /* Darker color for title */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.contact-form {
+    background: rgb(212, 158, 158); /* White background for form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    padding: 30px; /* Padding inside form */
+    max-width: 500px; /* Maximum width for better layout */
+    width: 100%; /* Full width for smaller screens */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+    text-align: left; /* Align labels to the left */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below labels */
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; /* Full width input */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1em; /* Font size for inputs */
+    transition: border-color 0.3s; /* Smooth transition for focus effect */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
+
+textarea {
+    height: 100px; /* Set height for textarea */
+    resize: none; /* Disable resizing */
+}
+
+.submit-button {
+    background-color: #007bff; /* Bootstrap blue */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded button */
+    padding: 10px 20px; /* Padding for button */
+    font-size: 1.2em; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

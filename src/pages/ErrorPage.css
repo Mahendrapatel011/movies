@@ -1,0 +1,46 @@
+.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .error-image {
+    max-width: 50%; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+  }
+  .back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #410d0d; /* Blue background */
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #106d10; /* Darker blue on hover */
+  }
+  
+  .back-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow */
+  }
+  
+  .back-button:active {
+    background-color: #004085; /* Even darker blue when clicked */
+  }
+  

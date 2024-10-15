@@ -1,0 +1,39 @@
+/* Style for the Header component */
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: center; /* Center align items */
+    width: 100%;
+    background-color: #fff; /* Optional: background color for the navigation bar */
+  }
+  
+  .nav-list li {
+    margin: 0 15px; /* Horizontal spacing between items */
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: inherit; /* Inherits color from the surrounding text */
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px 15px;
+    transition: color 0.3s ease, font-weight 0.3s ease; /* Smooth transition for hover and active */
+  }
+  
+  .nav-list a:hover {
+    color: #333; /* Color when hovered */
+    font-weight: bold;
+  }
+  
+  .nav-list a.active {
+    font-weight: bold;
+    color:  #333; /* Color for active link */
+  }
+  
+  .nav-list a:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
+  

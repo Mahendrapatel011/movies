@@ -1,0 +1,45 @@
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 elements per row */
+    gap: 20px; /* Add space between grid items */
+    padding: 20px; /* Add padding around the grid */
+}
+
+.container-grid li {
+    list-style-type: none; /* Remove bullet points */
+    overflow: hidden; /* Ensure content fits within the grid item */
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 elements per row on smaller screens */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 elements per row on mobile devices */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container-grid {
+        grid-template-columns: 1fr; /* 1 element per row on very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
