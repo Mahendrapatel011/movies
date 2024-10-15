@@ -32,6 +32,7 @@ body, html {
     max-width: 800px; /* Maximum width for better layout */
     margin: 20px auto; /* Center the profile card */
     align-items: center; /* Center content vertically */
+    flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 .profile-photo {
@@ -43,6 +44,7 @@ body, html {
 
 .profile-info {
     text-align: left; /* Align text to the left */
+    flex: 1; /* Allow the info section to take available space */
 }
 
 .dob {
@@ -73,4 +75,34 @@ body, html {
 .instagram-icon {
     margin-right: 8px; /* Space between icon and text */
     font-size: 1.5em; /* Icon size */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .about-title {
+        font-size: 2.5em; /* Adjust title size for smaller screens */
+    }
+
+    .profile-card {
+        flex-direction: column; /* Stack photo and info vertically */
+        align-items: center; /* Center items */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .profile-photo {
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 10px; /* Add space below photo */
+    }
+
+    .profile-info {
+        text-align: center; /* Center text on smaller screens */
+    }
+    
+    .thoughts {
+        font-size: 1em; /* Adjust font size for thoughts */
+    }
+    
+    .instagram-link {
+        font-size: 1em; /* Adjust font size for link */
+    }
 }
