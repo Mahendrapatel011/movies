@@ -33,7 +33,7 @@ const App = () => {
         },
         {
           path: "/Movie/:movieID",
-          element: <MoviesDetail />,  // Use the correct component here
+          element: <MoviesDetail/>,  // Use the correct component here
           loader: GetMoviesDetail,    // Use the correct loader here
         },
         {
