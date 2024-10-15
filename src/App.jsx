@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { About } from "./pages/About";
@@ -33,7 +33,7 @@ const App = () => {
         },
         {
           path: "/Movie/:movieID",
-          element: <MoviesDetail/>,  // Use the correct component here
+          element: <MoviesDetail />,  // Use the correct component here
           loader: GetMoviesDetail,    // Use the correct loader here
         },
         {
