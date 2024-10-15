@@ -9,7 +9,8 @@ import './index.css';
 
 import { ErrorPage } from "./pages/ErrorPage";
 import { GetMoviesData } from "./API/GetApiData";
-import { MoviesDetail, GetMoviesDetail } from "./Components/Ui/MovieDetails"; // Import correctly
+import { GetMoviesDetail, MoviesDetail } from "./Components/Ui/MovieDetails";
+
 
 const App = () => {
   const router = createBrowserRouter([
@@ -33,7 +34,7 @@ const App = () => {
         },
         {
           path: "/Movie/:movieID",
-          element: <MoviesDetail />,  // Use the correct component here
+          element: <MoviesDetail/>,  // Use the correct component here
           loader: GetMoviesDetail,    // Use the correct loader here
         },
         {
