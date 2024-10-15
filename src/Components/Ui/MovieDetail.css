@@ -120,7 +120,7 @@
 }
 
 /* Add some responsive adjustments */
-@media (max-width: 400px) {
+@media (max-width: 300px) {
     .movie-detail-container {
         max-width: 100%; /* Full width on smaller screens */
     }
