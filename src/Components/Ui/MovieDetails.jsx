@@ -1,3 +1,4 @@
+// src/Components/Ui/MovieDetails.jsx
 import { useLoaderData } from "react-router-dom";
 import './MovieDetail.css';
 
@@ -44,4 +45,19 @@ export const MoviesDetail = () => {
             </div>
         </div>
     );
+};
+
+// Export the GetMoviesDetail function
+export const GetMoviesDetail = async ({ params }) => {
+    const id = params.movieID; // Use movieID as IMDb ID
+    try {
+        const response = await fetch(
+            `https://www.omdbapi.com/?i=${id}&apikey=baad5987`
+        );
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.log(error);
+        return null;
+    }
 };
