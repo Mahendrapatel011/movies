@@ -9,7 +9,8 @@ import './index.css';
 
 import { ErrorPage } from "./pages/ErrorPage";
 import { GetMoviesData } from "./API/GetApiData";
-import { GetMoviesDetail, MoviesDetail } from "./Components/Ui/MovieDetails";
+import { MoviesDetail, GetMoviesDetail } from "./Components/Ui/MovieDetails";
+
 
 
 const App = () => {
