@@ -51,7 +51,7 @@ export const GetMoviesDetail = async ({ params }) => {
   const id = params.movieID; // Use movieID as IMDb ID
   try {
     const response = await fetch(
-      `http://www.omdbapi.com/?i=${id}&apikey=baad5987`
+      `https://www.omdbapi.com/?i=${id}&apikey=baad5987`
     );
     const data = await response.json();
     return data;
